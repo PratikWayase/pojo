@@ -1,10 +1,15 @@
 
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Student/Home'
 
 const App = () => {
   return (
-    <div className='text-orange-800'>
-      hellos
+    <div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      
     </div>
   )
 }
