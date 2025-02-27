@@ -4,14 +4,17 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Student/Home'
 import CourseList from './pages/Student/CourseList'
 import CourseDetails from './pages/Student/CourseDetails'
+import MyEnrollment from './pages/Student/MyEnrollment'
 
 const App = () => {
   return (
     <div>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/CourseList ' element={CourseList} />
-        <Route path='/Course/:id ' element= {CourseDetails} />
+        <Route path='/CourseList ' element={<CourseList/>} />
+        <Route path='/Course/:id ' element={<CourseDetails/>} />
+        <Route path='/MyEnrollment' element={<MyEnrollment/>} />
+    
       </Routes>
       
     </div>
